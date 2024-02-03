@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707003494
+game.tscn::PackedScene::4219459026986382680::1707003424::0::1::::<><>::res://bin1.gd<>uid://c2u2smnpgup7k::::res://sprites/bin1.jpeg
+bin1.gd::GDScript::-1::1707002880::0::1::::<>Area2D<>::
+::res://sprites/::1707003547
+bin1.png::CompressedTexture2D::5689851089178132103::1707003547::1707003549::1::::<><>::
+panda.png::CompressedTexture2D::2841514803479914691::1707003528::1707003549::1::::<><>::

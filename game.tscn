@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://b1d64yab3aboy"]
+[gd_scene load_steps=4 format=3 uid="uid://b1d64yab3aboy"]
 
-[node name="Game" type="Node2D"]
+[ext_resource type="Script" path="res://bin1.gd" id="1_kkoep"]
+[ext_resource type="Texture2D" uid="uid://cnchaswn7pkcd" path="res://sprites/bin1.png" id="2_avsi6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atb8f"]
+size = Vector2(2.5, 2.75)
+
+[node name="game" type="Node2D"]
+
+[node name="bin1" type="Area2D" parent="."]
+script = ExtResource("1_kkoep")
+
+[node name="Sprite2D" type="Sprite2D" parent="bin1"]
+scale = Vector2(0.1875, 0.1875)
+texture = ExtResource("2_avsi6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bin1"]
+shape = SubResource("RectangleShape2D_atb8f")
