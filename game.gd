@@ -11,7 +11,8 @@ extends Node2D
 
 @onready var bins_data = bin1_data + bin2_data + bin3_data + bin4_data + bin5_data + bin6_data
 
-@onready var objective = 'Apple'
+var rng = RandomNumberGenerator.new()
+@onready var objective = bins_data[rng.randf_range(0,len(bins_data))]
 
 func _process(delta):
 	$pointage.text = "Pointage: " +str(Score)
@@ -21,28 +22,34 @@ func _on_bin_1_bin_1_entered():
 	for item in bin1_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
 	
 func _on_bin_2_bin_2_entered():
 	for item in bin2_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
 
 func _on_bin_3_bin_3_entered():
 	for item in bin3_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
 
 func _on_bin_4_bin_4_entered():
 	for item in bin4_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
 
 func _on_bin_5_bin_5_entered():
 	for item in bin5_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
 
 func _on_bin_6_bin_6_entered():
 	for item in bin6_data:
 		if item == objective:
 			Score = Score + 1
+	objective = bins_data[rng.randf_range(0,len(bins_data))]
