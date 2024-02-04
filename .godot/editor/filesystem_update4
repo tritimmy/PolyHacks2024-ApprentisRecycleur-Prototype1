@@ -1,3 +1,5 @@
 res://game.tscn
-res://trash.gd
 res://bin1.gd
+res://bin2.gd
+res://trash.gd
+res://game.gd

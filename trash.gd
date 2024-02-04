@@ -21,5 +21,5 @@ func _input(event):
 		drop = true 
 		$AnimationPlayer.play('new_animation')
 
-func _on_bin_1_bin_1_entered():
+func _on_area_entered(area):
 	queue_free()

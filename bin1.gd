@@ -7,5 +7,6 @@ func _ready():
 
 signal bin1_entered
 func _on_trash_area_entered(area):
-	print("bin1 entered")
-	emit_signal("bin1_entered")
+	if area == self:
+		print("bin1 entered")
+		emit_signal("bin1_entered")
