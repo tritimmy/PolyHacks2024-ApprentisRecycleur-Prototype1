@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707020509
-bin1.gd::GDScript::-1::1707019887::0::1::::<>Area2D<>::
-game.tscn::PackedScene::4219459026986382680::1707020230::0::1::::<><>::uid://cyc1mhh2k4vxv::::res://sprites/background.jpeg<>res://bin1.gd<>uid://bgqpllyjvb34b::::res://sprites/panda.png<>uid://cnchaswn7pkcd::::res://sprites/bin1.png<>uid://b3rddkgehkter::::res://sprites/trash.png<>res://trash.gd<>uid://bgb4y5vsqj1ie::::res://sprites/bin2.png<>uid://b35vdde5gt7e0::::res://sprites/bin3.png<>uid://dkgsd5f5oirww::::res://sprites/bin4.png<>uid://cc426dsbucxvk::::res://sprites/bin5.png<>uid://dromjjerhmc3v::::res://sprites/bin6.png
-trash.gd::GDScript::-1::1707019911::0::1::::<>Area2D<>::
+::res://::1707022980
+bin1.gd::GDScript::-1::1707022386::0::1::::<>Area2D<>::
+bin2.gd::GDScript::-1::1707022244::0::1::::<>Area2D<>::
+game.gd::GDScript::-1::1707022884::0::1::::<>Node2D<>::
+game.tscn::PackedScene::4219459026986382680::1707022923::0::1::::<><>::uid://cyc1mhh2k4vxv::::res://sprites/background.jpeg<>res://game.gd<>res://bin1.gd<>uid://bgqpllyjvb34b::::res://sprites/panda.png<>uid://cnchaswn7pkcd::::res://sprites/bin1.png<>uid://eaj7k857vfsi::::res://trash.tscn<>uid://bgb4y5vsqj1ie::::res://sprites/bin2.png<>uid://b35vdde5gt7e0::::res://sprites/bin3.png<>res://bin2.gd<>uid://dkgsd5f5oirww::::res://sprites/bin4.png<>uid://cc426dsbucxvk::::res://sprites/bin5.png<>uid://dromjjerhmc3v::::res://sprites/bin6.png
+trash.gd::GDScript::-1::1707022436::0::1::::<>Area2D<>::
+trash.tscn::PackedScene::281359550510688808::1707022561::0::1::::<><>::res://trash.gd<>uid://b3rddkgehkter::::res://sprites/trash.png
 ::res://sprites/::1707010051
 background.jpeg::CompressedTexture2D::6463102821264252319::1707008474::1707008494::1::::<><>::
 bin1.png::CompressedTexture2D::5689851089178132103::1707006804::1707006860::1::::<><>::

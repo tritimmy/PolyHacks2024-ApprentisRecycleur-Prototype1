@@ -1,5 +1,11 @@
 res://game.tscn
+res://game.gd
+res://trash.gd
+res://trash.tscn
 res://bin1.gd
 res://bin2.gd
-res://trash.gd
-res://game.gd
+res://bin3.gd
+res://bin4.gd
+res://bin5.gd
+res://bin6.gd
+res://pointage.gd

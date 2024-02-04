@@ -17,9 +17,16 @@ func _process(_delta):
 func _input(event):
 	# Check if the left mouse button is pressed
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		print("Left mouse button clicked!")
-		drop = true 
-		$AnimationPlayer.play('new_animation')
+		if drop == false:
+			$AnimationPlayer.play('new_animation')
+			drop = true 
+		else:
+			pass
 
-func _on_area_entered(area):
-	queue_free()
+func _on_area_entered(_area):
+	position.x = -100
+	position.y = -100
+	drop = true
+
+func _on_button_pressed():
+	drop = false
