@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1d64yab3aboy"]
+[gd_scene load_steps=13 format=3 uid="uid://b1d64yab3aboy"]
 
+[ext_resource type="Texture2D" uid="uid://cyc1mhh2k4vxv" path="res://sprites/background.jpeg" id="1_04bk3"]
 [ext_resource type="Script" path="res://bin1.gd" id="1_kkoep"]
 [ext_resource type="Texture2D" uid="uid://bgqpllyjvb34b" path="res://sprites/panda.png" id="1_knbt8"]
 [ext_resource type="Texture2D" uid="uid://cnchaswn7pkcd" path="res://sprites/bin1.png" id="2_avsi6"]
@@ -20,12 +21,26 @@ size = Vector2(2.60746, 2.81738)
 
 [node name="background" type="Node2D" parent="."]
 
+[node name="city" type="Sprite2D" parent="background"]
+modulate = Color(0.27451, 1, 0.211765, 1)
+position = Vector2(578.7, 321.975)
+scale = Vector2(0.203599, 0.16521)
+texture = ExtResource("1_04bk3")
+
+[node name="panda_border" type="Sprite2D" parent="background"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.780392, 0.780392, 0.780392, 1)
+position = Vector2(156, 499)
+scale = Vector2(9.25, 9.3125)
+texture = ExtResource("1_knbt8")
+
 [node name="panda" type="Sprite2D" parent="background"]
+self_modulate = Color(0.780392, 0.780392, 0.780392, 1)
 position = Vector2(148, 508)
 scale = Vector2(8.75, 8.75)
 texture = ExtResource("1_knbt8")
 
-[node name="city" type="Sprite2D" parent="background"]
+[node name="pointage" type="Node2D" parent="."]
 
 [node name="trash" type="Area2D" parent="."]
 position = Vector2(456, 104)

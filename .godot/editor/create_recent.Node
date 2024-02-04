@@ -1,8 +1,8 @@
+Node2D
 Sprite2D
+Polygon2D
 Node
 Label
 CollisionShape2D
 Area2D
-Node2D
 RigidBody2D
-Polygon2D
