@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b1d64yab3aboy"]
+[gd_scene load_steps=23 format=3 uid="uid://b1d64yab3aboy"]
 
 [ext_resource type="Texture2D" uid="uid://cyc1mhh2k4vxv" path="res://sprites/background.jpeg" id="1_04bk3"]
 [ext_resource type="Script" path="res://game.gd" id="1_dunxd"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://bin4.gd" id="11_4nkc5"]
 [ext_resource type="Script" path="res://bin5.gd" id="13_sy2v2"]
 [ext_resource type="Script" path="res://bin6.gd" id="15_10skb"]
+[ext_resource type="Texture2D" uid="uid://b8r0otknrg4lx" path="res://sprites/iPhone.png" id="18_o8n8h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l505m"]
 size = Vector2(80, 80)
@@ -31,7 +32,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(2.08165e-12, -0.25, 0, 0.25, 0, 600, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(200, -0.25, 0, 0.25, 0, 600, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 1)
 }
 
@@ -47,6 +48,7 @@ size = Vector2(2.60746, 2.81738)
 script = ExtResource("1_dunxd")
 
 [node name="background" type="Node2D" parent="."]
+position = Vector2(267, 136)
 
 [node name="city" type="Sprite2D" parent="background"]
 modulate = Color(0.27451, 1, 0.211765, 1)
@@ -68,7 +70,7 @@ scale = Vector2(8.75, 8.75)
 texture = ExtResource("1_knbt8")
 
 [node name="trash" type="Area2D" parent="."]
-position = Vector2(1059, 90)
+position = Vector2(1278, 200)
 script = ExtResource("4_tam1k")
 
 [node name="Sprite2D" type="Sprite2D" parent="trash"]
@@ -85,7 +87,7 @@ libraries = {
 }
 
 [node name="bin1" type="Area2D" parent="."]
-position = Vector2(1024, 520)
+position = Vector2(1291, 656)
 scale = Vector2(40, 40)
 script = ExtResource("1_kkoep")
 
@@ -100,16 +102,16 @@ shape = SubResource("RectangleShape2D_atb8f")
 [node name="text" type="Node" parent="bin1"]
 
 [node name="Label" type="Label" parent="bin1/text"]
-offset_left = 969.0
-offset_top = 587.0
-offset_right = 1030.0
-offset_bottom = 610.0
+offset_left = 1230.0
+offset_top = 723.0
+offset_right = 1291.0
+offset_bottom = 746.0
 scale = Vector2(2.00256, 1.90708)
 text = "Organic"
 metadata/_edit_use_anchors_ = true
 
 [node name="bin2" type="Area2D" parent="."]
-position = Vector2(897, 522)
+position = Vector2(1164, 658)
 scale = Vector2(40, 40)
 script = ExtResource("7_oesxb")
 
@@ -126,17 +128,17 @@ shape = SubResource("RectangleShape2D_atb8f")
 [node name="Label" type="Label" parent="bin2/text"]
 anchors_preset = -1
 anchor_left = -0.0138889
-anchor_right = -0.0138889
-offset_left = 724.0
-offset_top = 587.0
-offset_right = 785.0
-offset_bottom = 610.0
+anchor_right = -0.0233008
+offset_left = 1015.61
+offset_top = 721.0
+offset_right = 1076.61
+offset_bottom = 744.0
 scale = Vector2(2.00256, 1.90708)
 text = "Metal"
 metadata/_edit_use_anchors_ = true
 
 [node name="bin3" type="Area2D" parent="."]
-position = Vector2(769, 522)
+position = Vector2(1036, 658)
 scale = Vector2(40, 40)
 script = ExtResource("9_0udhs")
 
@@ -153,17 +155,17 @@ shape = SubResource("RectangleShape2D_atb8f")
 [node name="Label" type="Label" parent="bin3/text"]
 anchors_preset = -1
 anchor_left = -0.0277778
-anchor_right = -0.0277778
-offset_left = 873.0
-offset_top = 587.0
-offset_right = 934.0
-offset_bottom = 610.0
+anchor_right = -0.0395426
+offset_left = 1173.22
+offset_top = 723.0
+offset_right = 1234.22
+offset_bottom = 746.0
 scale = Vector2(2.00256, 1.90708)
 text = "Glass"
 metadata/_edit_use_anchors_ = true
 
 [node name="bin4" type="Area2D" parent="."]
-position = Vector2(639, 524)
+position = Vector2(906, 660)
 scale = Vector2(40, 40)
 script = ExtResource("11_4nkc5")
 
@@ -179,19 +181,19 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin4/text"]
 anchors_preset = -1
-anchor_left = -0.0355903
-anchor_right = -0.0355903
-offset_left = 622.0
-offset_top = 587.0
-offset_right = 683.0
-offset_bottom = 610.0
+anchor_left = -0.0358824
+anchor_right = -0.0417647
+offset_left = 917.0
+offset_top = 723.0
+offset_right = 978.0
+offset_bottom = 746.0
 scale = Vector2(2.00256, 1.90708)
 text = "Plastic
 "
 metadata/_edit_use_anchors_ = true
 
 [node name="bin5" type="Area2D" parent="."]
-position = Vector2(510, 525)
+position = Vector2(777, 661)
 scale = Vector2(40, 40)
 script = ExtResource("13_sy2v2")
 
@@ -207,19 +209,19 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin5/text"]
 anchors_preset = -1
-anchor_left = -0.0407986
-anchor_right = -0.0407986
-offset_left = 498.0
-offset_top = 587.0
-offset_right = 559.0
-offset_bottom = 610.0
+anchor_left = -0.0405882
+anchor_right = -0.0494117
+offset_left = 805.0
+offset_top = 723.0
+offset_right = 866.0
+offset_bottom = 746.0
 scale = Vector2(2.00256, 1.90708)
 text = "Paper
 "
 metadata/_edit_use_anchors_ = true
 
 [node name="bin6" type="Area2D" parent="."]
-position = Vector2(381, 527)
+position = Vector2(648, 663)
 scale = Vector2(40, 40)
 script = ExtResource("15_10skb")
 
@@ -235,46 +237,52 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin6/text"]
 anchors_preset = -1
-anchor_left = -0.0399306
-anchor_right = -0.0399306
-offset_left = 353.0
-offset_top = 587.0
-offset_right = 429.0
-offset_bottom = 610.0
+anchor_left = -0.04
+anchor_right = -0.0482353
+offset_left = 656.0
+offset_top = 723.0
+offset_right = 732.0
+offset_bottom = 746.0
 scale = Vector2(2.00256, 1.90708)
 text = "E-Waste"
 metadata/_edit_use_anchors_ = true
 
 [node name="pointage" type="Label" parent="."]
-offset_left = 39.0
-offset_top = 276.0
-offset_right = 115.0
-offset_bottom = 299.0
+offset_left = 306.0
+offset_top = 412.0
+offset_right = 382.0
+offset_bottom = 435.0
 scale = Vector2(2.97123, 2.88)
 text = "POINTS: 0
 "
 
 [node name="title" type="Label" parent="."]
-offset_left = 20.0
-offset_right = 167.0
-offset_bottom = 23.0
+offset_left = 287.0
+offset_top = 136.0
+offset_right = 434.0
+offset_bottom = 159.0
 scale = Vector2(4.12, 3.92)
 text = "Apprenti Recycleur"
 
 [node name="objective" type="Label" parent="."]
-offset_left = 20.0
-offset_top = 105.0
-offset_right = 136.0
-offset_bottom = 128.0
+offset_left = 287.0
+offset_top = 241.0
+offset_right = 403.0
+offset_bottom = 264.0
 scale = Vector2(2.28364, 2.34742)
 text = "déchet:  "
 
 [node name="Button" type="Button" parent="."]
-offset_left = 20.0
-offset_top = 188.0
-offset_right = 299.0
-offset_bottom = 262.0
+offset_left = 287.0
+offset_top = 324.0
+offset_right = 566.0
+offset_bottom = 398.0
 text = "Clique ici pour ton prochain déchet"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(841, 464)
+scale = Vector2(0.903125, 0.766667)
+texture = ExtResource("18_o8n8h")
 
 [connection signal="area_entered" from="trash" to="trash" method="_on_area_entered"]
 [connection signal="area_entered" from="trash" to="bin1" method="_on_trash_area_entered"]
