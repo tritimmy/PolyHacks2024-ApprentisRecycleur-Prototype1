@@ -1,7 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707003494
-game.tscn::PackedScene::4219459026986382680::1707003424::0::1::::<><>::res://bin1.gd<>uid://c2u2smnpgup7k::::res://sprites/bin1.jpeg
+::res://::1707007174
+game.tscn::PackedScene::4219459026986382680::1707007174::0::1::::<><>::res://bin1.gd<>uid://bgqpllyjvb34b::::res://sprites/panda.png<>uid://cnchaswn7pkcd::::res://sprites/bin1.png<>uid://b3rddkgehkter::::res://sprites/trash.png<>uid://bgb4y5vsqj1ie::::res://sprites/bin2.png<>uid://b35vdde5gt7e0::::res://sprites/bin3.png
 bin1.gd::GDScript::-1::1707002880::0::1::::<>Area2D<>::
-::res://sprites/::1707003547
-bin1.png::CompressedTexture2D::5689851089178132103::1707003547::1707003549::1::::<><>::
+::res://sprites/::1707007333
+bin1.png::CompressedTexture2D::5689851089178132103::1707006804::1707006860::1::::<><>::
+bin2.png::CompressedTexture2D::2811423384100300228::1707006723::1707006860::1::::<><>::
+bin3.png::CompressedTexture2D::4414920217530744281::1707006822::1707006860::1::::<><>::
+bin4.png::CompressedTexture2D::7874636602042129382::1707007282::1707007350::1::::<><>::
+bin5.png::CompressedTexture2D::4974780913394544672::1707007324::1707007350::1::::<><>::
+bin6.png::CompressedTexture2D::8382118837212632645::1707007348::1707007350::1::::<><>::
 panda.png::CompressedTexture2D::2841514803479914691::1707003528::1707003549::1::::<><>::
+trash.png::CompressedTexture2D::4386990770430877221::1707006182::1707006182::1::::<><>::
