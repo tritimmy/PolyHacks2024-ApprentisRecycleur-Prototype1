@@ -52,10 +52,16 @@ position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
-[node name="Label" type="Label" parent="bin1"]
-offset_right = 61.0
-offset_bottom = 23.0
+[node name="text" type="Node" parent="bin1"]
+
+[node name="Label" type="Label" parent="bin1/text"]
+offset_left = 969.0
+offset_top = 587.0
+offset_right = 1030.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
 text = "Organic"
+metadata/_edit_use_anchors_ = true
 
 [node name="bin2" type="Area2D" parent="."]
 position = Vector2(897, 522)
@@ -71,6 +77,19 @@ position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
+[node name="text" type="Node" parent="bin2"]
+
+[node name="Label" type="Label" parent="bin2/text"]
+anchors_preset = -1
+anchor_right = -0.0138889
+offset_left = 724.0
+offset_top = 587.0
+offset_right = 785.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
+text = "Metal"
+metadata/_edit_use_anchors_ = true
+
 [node name="bin3" type="Area2D" parent="."]
 position = Vector2(769, 522)
 scale = Vector2(40, 40)
@@ -84,6 +103,20 @@ texture = ExtResource("6_nxeg0")
 position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
+
+[node name="text" type="Node" parent="bin3"]
+
+[node name="Label" type="Label" parent="bin3/text"]
+anchors_preset = -1
+anchor_left = -0.0138889
+anchor_right = -0.0277778
+offset_left = 873.0
+offset_top = 587.0
+offset_right = 934.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
+text = "Glass"
+metadata/_edit_use_anchors_ = true
 
 [node name="bin4" type="Area2D" parent="."]
 position = Vector2(639, 524)
@@ -99,8 +132,23 @@ position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
+[node name="text" type="Node" parent="bin4"]
+
+[node name="Label" type="Label" parent="bin4/text"]
+anchors_preset = -1
+anchor_left = -0.0277778
+anchor_right = -0.0355903
+offset_left = 622.0
+offset_top = 587.0
+offset_right = 683.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
+text = "Plastic
+"
+metadata/_edit_use_anchors_ = true
+
 [node name="bin5" type="Area2D" parent="."]
-position = Vector2(506, 525)
+position = Vector2(510, 525)
 scale = Vector2(40, 40)
 script = ExtResource("1_kkoep")
 
@@ -112,6 +160,21 @@ texture = ExtResource("8_4fgre")
 position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
+
+[node name="text" type="Node" parent="bin5"]
+
+[node name="Label" type="Label" parent="bin5/text"]
+anchors_preset = -1
+anchor_left = -0.0277778
+anchor_right = -0.0407986
+offset_left = 498.0
+offset_top = 587.0
+offset_right = 559.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
+text = "Paper
+"
+metadata/_edit_use_anchors_ = true
 
 [node name="bin6" type="Area2D" parent="."]
 position = Vector2(381, 527)
@@ -126,3 +189,17 @@ texture = ExtResource("9_lrhau")
 position = Vector2(0.000863075, 0.0863295)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
+
+[node name="text" type="Node" parent="bin6"]
+
+[node name="Label" type="Label" parent="bin6/text"]
+anchors_preset = -1
+anchor_left = -0.0277778
+anchor_right = -0.0399306
+offset_left = 353.0
+offset_top = 587.0
+offset_right = 429.0
+offset_bottom = 610.0
+scale = Vector2(2.00256, 1.90708)
+text = "E-Waste"
+metadata/_edit_use_anchors_ = true
