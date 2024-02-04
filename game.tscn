@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://b1d64yab3aboy"]
+[gd_scene load_steps=22 format=3 uid="uid://b1d64yab3aboy"]
 
 [ext_resource type="Texture2D" uid="uid://cyc1mhh2k4vxv" path="res://sprites/background.jpeg" id="1_04bk3"]
+[ext_resource type="Script" path="res://game.gd" id="1_dunxd"]
 [ext_resource type="Script" path="res://bin1.gd" id="1_kkoep"]
 [ext_resource type="Texture2D" uid="uid://bgqpllyjvb34b" path="res://sprites/panda.png" id="1_knbt8"]
 [ext_resource type="Texture2D" uid="uid://cnchaswn7pkcd" path="res://sprites/bin1.png" id="2_avsi6"]
@@ -43,6 +44,7 @@ _data = {
 size = Vector2(2.60746, 2.81738)
 
 [node name="game" type="Node2D"]
+script = ExtResource("1_dunxd")
 
 [node name="background" type="Node2D" parent="."]
 
@@ -281,5 +283,11 @@ text = "Clique ici pour ton prochain déchet"
 [connection signal="area_entered" from="trash" to="bin4" method="_on_trash_area_entered"]
 [connection signal="area_entered" from="trash" to="bin5" method="_on_trash_area_entered"]
 [connection signal="area_entered" from="trash" to="bin6" method="_on_trash_area_entered"]
+[connection signal="bin1_entered" from="bin1" to="." method="_on_bin_1_bin_1_entered"]
+[connection signal="bin2_entered" from="bin2" to="." method="_on_bin_2_bin_2_entered"]
+[connection signal="bin3_entered" from="bin3" to="." method="_on_bin_3_bin_3_entered"]
+[connection signal="bin4_entered" from="bin4" to="." method="_on_bin_4_bin_4_entered"]
+[connection signal="bin5_entered" from="bin5" to="." method="_on_bin_5_bin_5_entered"]
+[connection signal="bin6_entered" from="bin6" to="." method="_on_bin_6_bin_6_entered"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="trash" method="_on_button_pressed"]
