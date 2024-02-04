@@ -127,7 +127,7 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin2/text"]
 anchors_preset = -1
-anchor_left = -0.0138889
+anchor_left = -0.0233008
 anchor_right = -0.0233008
 offset_left = 1015.61
 offset_top = 721.0
@@ -154,7 +154,7 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin3/text"]
 anchors_preset = -1
-anchor_left = -0.0277778
+anchor_left = -0.0395426
 anchor_right = -0.0395426
 offset_left = 1173.22
 offset_top = 723.0
@@ -181,7 +181,7 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin4/text"]
 anchors_preset = -1
-anchor_left = -0.0358824
+anchor_left = -0.0417647
 anchor_right = -0.0417647
 offset_left = 917.0
 offset_top = 723.0
@@ -209,7 +209,7 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin5/text"]
 anchors_preset = -1
-anchor_left = -0.0405882
+anchor_left = -0.0494117
 anchor_right = -0.0494117
 offset_left = 805.0
 offset_top = 723.0
@@ -237,7 +237,7 @@ shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="Label" type="Label" parent="bin6/text"]
 anchors_preset = -1
-anchor_left = -0.04
+anchor_left = -0.0482353
 anchor_right = -0.0482353
 offset_left = 656.0
 offset_top = 723.0
