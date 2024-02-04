@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b1d64yab3aboy"]
+[gd_scene load_steps=17 format=3 uid="uid://b1d64yab3aboy"]
 
 [ext_resource type="Texture2D" uid="uid://cyc1mhh2k4vxv" path="res://sprites/background.jpeg" id="1_04bk3"]
 [ext_resource type="Script" path="res://bin1.gd" id="1_kkoep"]
@@ -14,6 +14,42 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l505m"]
 size = Vector2(80, 80)
+
+[sub_resource type="Animation" id="Animation_de6n5"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(381, 152), Vector2(381, 631)]
+}
+
+[sub_resource type="Animation" id="Animation_2gxja"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(381, 152)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h62o5"]
+_data = {
+"RESET": SubResource("Animation_2gxja"),
+"new_animation": SubResource("Animation_de6n5")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_atb8f"]
 size = Vector2(2.60746, 2.81738)
@@ -53,6 +89,11 @@ texture = ExtResource("2_l1cqu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="trash"]
 shape = SubResource("RectangleShape2D_l505m")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="trash"]
+libraries = {
+"": SubResource("AnimationLibrary_h62o5")
+}
+
 [node name="bin1" type="Area2D" parent="."]
 position = Vector2(1024, 520)
 scale = Vector2(40, 40)
@@ -64,7 +105,6 @@ texture = ExtResource("2_avsi6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin1"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin1"]
@@ -89,13 +129,13 @@ texture = ExtResource("5_33wif")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin2"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin2"]
 
 [node name="Label" type="Label" parent="bin2/text"]
 anchors_preset = -1
+anchor_left = -0.0138889
 anchor_right = -0.0138889
 offset_left = 724.0
 offset_top = 587.0
@@ -116,14 +156,13 @@ texture = ExtResource("6_nxeg0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin3"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin3"]
 
 [node name="Label" type="Label" parent="bin3/text"]
 anchors_preset = -1
-anchor_left = -0.0138889
+anchor_left = -0.0277778
 anchor_right = -0.0277778
 offset_left = 873.0
 offset_top = 587.0
@@ -144,14 +183,13 @@ texture = ExtResource("7_rhypn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin4"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin4"]
 
 [node name="Label" type="Label" parent="bin4/text"]
 anchors_preset = -1
-anchor_left = -0.0277778
+anchor_left = -0.0355903
 anchor_right = -0.0355903
 offset_left = 622.0
 offset_top = 587.0
@@ -173,14 +211,13 @@ texture = ExtResource("8_4fgre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin5"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin5"]
 
 [node name="Label" type="Label" parent="bin5/text"]
 anchors_preset = -1
-anchor_left = -0.0277778
+anchor_left = -0.0407986
 anchor_right = -0.0407986
 offset_left = 498.0
 offset_top = 587.0
@@ -202,14 +239,13 @@ texture = ExtResource("9_lrhau")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bin6"]
 position = Vector2(0.000863075, 0.0863295)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_atb8f")
 
 [node name="text" type="Node" parent="bin6"]
 
 [node name="Label" type="Label" parent="bin6/text"]
 anchors_preset = -1
-anchor_left = -0.0277778
+anchor_left = -0.0399306
 anchor_right = -0.0399306
 offset_left = 353.0
 offset_top = 587.0
@@ -234,3 +270,6 @@ offset_right = 167.0
 offset_bottom = 23.0
 scale = Vector2(4.12, 3.92)
 text = "L'Apprenti Recycleur"
+
+[connection signal="area_entered" from="trash" to="bin1" method="_on_trash_area_entered"]
+[connection signal="bin1_entered" from="bin1" to="trash" method="_on_bin_1_bin_1_entered"]

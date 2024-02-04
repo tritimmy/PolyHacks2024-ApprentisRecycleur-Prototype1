@@ -5,6 +5,7 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+signal bin1_entered
+func _on_trash_area_entered(area):
+	print("bin1 entered")
+	emit_signal("bin1_entered")

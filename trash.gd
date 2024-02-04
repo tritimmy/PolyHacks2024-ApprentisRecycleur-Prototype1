@@ -1,12 +1,13 @@
 extends Area2D
 
-@onready var drop = false
+@onready var drop = false;
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	# Get the mouse position
 	var mouse_position = get_global_mouse_position()
 	# Update the sprite's position to follow the mouse
@@ -18,5 +19,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		print("Left mouse button clicked!")
 		drop = true 
-		while position.y<650:
-			position.y = position.y+0.0001
+		$AnimationPlayer.play('new_animation')
+
+func _on_bin_1_bin_1_entered():
+	queue_free()
